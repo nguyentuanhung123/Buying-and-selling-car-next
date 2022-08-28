@@ -1,0 +1,85 @@
+.head {
+  padding: 20px 0;
+  color: var(--text-color);
+}
+.logo h1 {
+  font-size: 35px;
+  font-weight: 900;
+}
+.head .icon {
+  margin-left: 10px;
+}
+
+/*-------------header-------------*/
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 30px;
+  position: relative;
+}
+
+header ul {
+  padding: 30px 20px;
+}
+
+header li {
+  margin-right: 40px;
+}
+
+header ul a {
+  color: var(--text-color);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header ul a:hover {
+  color: var(--primary-color);
+}
+
+.start {
+  background-color: var(--primary-color);
+  padding: 30px 70px;
+  color: var(--text-color);
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+  }
+  header {
+    margin: 0;
+    background-color: var(--primary-color);
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 20px;
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: var(--text-color);
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: -20px;
+    box-shadow: none;
+  }
+  .toggle svg {
+    margin: 0;
+  }
+  ul.mobile-nav {
+    position: absolute;
+    /* top: 10vh; */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+}
